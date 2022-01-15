@@ -6,5 +6,8 @@ import {Component} from "@angular/core";
   styleUrls:["./practicing.component.css"]
 })
 export class PracticingComponent{
-
+  @ViewChild("f") createForm!: NgForm;
+  onSubmit(){
+    console.log(this.createForm.value);
+  }
 }
